@@ -1,0 +1,21 @@
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    border: 1px solid black;
+    padding: 5px 20px;
+    margin-bottom: 10px;
+    max-width: 100%;
+    border-radius: 4px;
+
+    
+    .deleteBtn {
+        border: none;
+        background-color: transparent;
+    }
+}
+.reminded {
+    border-left: 5px solid green;
+}
+
