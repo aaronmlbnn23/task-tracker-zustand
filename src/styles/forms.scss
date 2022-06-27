@@ -8,14 +8,23 @@ form {
     
     #taskDate, #taskName, .addBtn {
         display: block;
-        padding: 7px;
+        padding: 10px;
         border-radius: 4px;
         width: 100%;
     }
 
+    .addBtn {
+        background-color: var(--bs-blue);
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
    & .success{
-    color: green;
+    color: var(--bs-green);
     display: none;
+    font-weight: 600;
+    font-size: 0.75rem;
 
     &.show {
         display: block;

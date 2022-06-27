@@ -7,9 +7,8 @@ const taskform = ({onAdd}) => {
     const [taskName, setTaskName] = useState('')
     const [taskDate, setTaskDate] = useState('')
     const [taskReminder, setTaskReminder] = useState(false)
-    const addTask = useTaskStore((state) => state.addTask)
-    const tasks = useTaskStore((state) => state.tasks)
     const success = document.querySelector('.success')
+    
     const handleSubmit = (e) => {
         e.preventDefault();
         if(taskName == '' || taskDate == ''){

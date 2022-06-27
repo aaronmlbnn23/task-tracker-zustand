@@ -1,3 +1,37 @@
-.savedtasks {
-    z-index: 5;
+
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    max-width: 100%;
+    overflow: auto;
+    background-color: var(--bs-gray-200);
+
+    
+    .deleteBtn {
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    
+
 }
+.deleteAll {
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+    width: 100%;
+    color: white;
+    border: none;
+    background-color: var(--bs-danger);
+    cursor: pointer;
+}
+.reminded {
+    border-left: 7px solid var(--bs-green);
+}
+

@@ -5,7 +5,7 @@
     justify-content: space-between;
     width: 100% ;
     text-decoration: none;
-    background-color: var(--primary-background);
+    background-color: var(--bs-teal);
     margin-bottom: 20px;
     top: 0;
     left: 0;
@@ -14,6 +14,7 @@
 
     & .title{
         font-weight: 700;
+        cursor: pointer;
     }
 
     & .link-wrapper {

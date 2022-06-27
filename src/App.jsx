@@ -3,18 +3,11 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/home";
 import ManageTasks from "./pages/managetasks";
 import Navbar from "./components/navbar";
-import Services from "./pages/services";
-import Contact from "./pages/contact";
-import TaskForm from "./components/taskform";
-import TaskItems from "./components/taskItem";
 import { useTaskStore } from './store/TaskStore'
 
 
 function App() {
   const fetchTasks = useTaskStore((state)=> state.fetchTasks)
-  const savedtasks = useTaskStore((state)=> state.savedtasks)
-  const [tasks, settasks] = useState([]);
-  const updateGlobalTasks = useTaskStore((state) => state.setTasks)
 
   useEffect(()=> {
     fetchTasks()
